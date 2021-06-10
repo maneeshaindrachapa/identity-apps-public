@@ -28,7 +28,7 @@
 @iconWrapperVeryPadding: 10px;
 @iconDefaultBgColor: @nobel;
 @iconDefaultBgHoverColor: @black;
-@iconWrapperTwoTonePrimaryColor: @primaryColor;
+@iconWrapperTwoTonePrimaryColor: @smuPrimary01;
 @iconWrapperTwoToneSecondaryColor: @nobel;
 @iconWrapperColoredPrimaryColor: @primaryColor;
 @iconWrapperSpacingRight: 8px;

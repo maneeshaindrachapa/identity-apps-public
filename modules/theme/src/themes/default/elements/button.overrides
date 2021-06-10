@@ -19,15 +19,59 @@
 
 .ui.button {
     &.link-button {
-        background: transparent;
+        background: transparent !important;
         color: @primaryColor;
 
+        &:hover {
+            background: transparent;
+        }
+        &.compact {
+            padding: 0;
+        }
+        &.positive {
+            color: @positiveColor;
+        }
+        &.negative {
+            color: @negativeColor;
+        }
+        &.warning {
+            color: @warningColor !important;
+        }
+        &.info {
+            color: @infoColor !important;
+        }
+        &.loader {
+            &-left, &-right {
+                display: inline-flex;
+
+                .ui.loader {
+                    margin: 0 6px;
+                }
+            }
+        }
         &.with-hover {
             &:hover {
                 background: @backgroundColor;
             }
             &:active {
                 background: @downBackgroundColor;
+            }
+        }
+        &.with-bold-text {
+            font-weight: bold;
+        }
+        &.with-no-border {
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            border-style: none;
+            border: 0px transparent;
+            box-shadow: none !important;
+
+            &:hover, &:focus, &:active {
+                color: inherit;
+                background: transparent !important;
+                box-shadow: none !important;
             }
         }
     }
@@ -100,6 +144,32 @@
         background-color: @infoPrimaryButtonColor;
         color: @modalPrimaryButtonFontColor;
     }
+    &.grid-button {
+        margin-top: 23px;
+
+        &.wizard {
+            margin-top: -8px;
+            margin-right: 0;
+        }
+    }
+}
+
+.ui.primary.button{
+        background: @smuPrimary01;
+        color: #FFFFFF;
+        text-shadow: none;
+        background-image: none;
+
+        &:hover, &:focus, &:active {
+            background: @smuPrimary01 !important;
+            box-shadow: none !important;
+        }
+}
+
+.ui.button.link-button{
+    color: @smuPrimary01;
+    text-shadow: none;
+    background-image: none;
 }
 
 .ui.basic.button {
@@ -119,6 +189,45 @@
         border: @inputAddOnBorder;
         border-left: 0;
     }
+
+    &.test-button {
+        color: @primaryColor !important;
+        border-color: @primaryColor;
+        box-shadow: 0 0 0 1px @primaryColor inset;
+
+        &:hover, &:focus {
+            box-shadow: 0 0 0 1px @primaryColor inset;
+            color: @primaryColor !important;
+
+            i {
+                color: @primaryColor;
+            }
+        }
+
+        i {
+            color: @primaryColor;
+
+            &:hover {
+                color: @primaryColor;
+            }
+        }
+
+        &.red {
+            color: @red !important;
+
+            &:hover {
+                color: @red !important;
+            }
+        }
+
+        &.green {
+            color: @green !important;
+
+            &:hover {
+                color: @green !important;
+            }
+        }
+    }
 }
 
 .ui.labeled.icon.button {
@@ -131,5 +240,95 @@
         i {
             background: transparent;
         }
+    }
+}
+
+.ui.button {
+    &.warning {
+        color: @white;
+        background-color: @warningColor;
+    }
+    &.info {
+        color: @white;
+        background-color: @infoColor;
+    }
+}
+
+/*******************************
+     Claim Mapping Variation
+*******************************/
+
+.ui.button.toggle.active {
+     &.claim-mapping-button {
+       background-color: #f47b20 !important;
+     }
+}
+
+.ui.button {
+   &.claim-mapping-button {
+       background: #e8e8e8 none;
+   }
+    &.claim-selection-add-button {
+          background: #f4f7f9 none;
+    }
+}
+
+.ui.button:hover {
+   &.claim-mapping-button {
+        background-color: #CACBCD;
+        background-image: none;
+        box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    &.claim-selection-add-button {
+            background-color: #CACBCD;
+            background-image: none;
+            box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+            color: rgba(0, 0, 0, 0.8);
+        }
+}
+
+.ui.button {
+    &.meta-columns-button {
+        padding: @metaColumnsButtonPadding;
+    }
+}
+
+.ui.button {
+    &.generate-password-button {
+        padding: @generatePasswordButtonPadding;
+        margin-top: @generatePasswordButtonMarginTop;
+    }
+}
+
+.ui.button {
+    &.oidc-action-button {
+        min-width: @OIDCActionButtonMinWidth;
+        padding: @OIDCActionButtonPadding;
+        font-size: @OIDCActionButtonFontSize;
+        margin-left: @OIDCActionButtonMarginLeft;
+    }
+}
+
+.ui.button {
+   &.certificate-info-link-button {
+      padding-left: 0px;
+   }
+}
+
+.ui.button {
+   &.idp-certificate-download-button {
+      width: 188px;
+   }
+}
+.ui.button {
+    &.totp-verify-action-button {
+        width: @TOTPVerifyActionButtonWidth;
+        font-size: large;
+    }
+}
+.ui.button {
+    &.totp-verify-done-button {
+        margin: 0.5rem;
     }
 }

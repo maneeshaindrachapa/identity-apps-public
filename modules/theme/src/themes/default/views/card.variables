@@ -30,9 +30,9 @@
 @settingsCardHeaderFontSize: 1.5rem;
 @settingsCardPadding: 2em;
 @settingsCardHeaderPadding: 2em 2em 1.5em;
-@settingsCardActionButtonColor: @primaryColor;
+@settingsCardActionButtonColor: @smuPrimary01;
 @settingsCardTabItemBorderBottom: 3px;
-@settingsCardTabItemBorderBottomColor: @primaryColor;
+@settingsCardTabItemBorderBottomColor: transparent;
 
 /*-------------------
 Recent Application Card
@@ -53,7 +53,7 @@ Recent Application Card
 @selectionCardHoverBoxShadow: @defaultCardHoverBoxShadow;
 @selectionCardTransition: @defaultCardTransition;
 @selectionCardBorder: @defaultCardBorder;
-@selectionCardSelectedStateBorderColor: @primaryColor;
+@selectionCardSelectedStateBorderColor: transparent;
 @selectionCardDefaultWidth: 150px;
 @selectionCardRightSpacing: 20px;
 @selectionCardTextContainerPadding: 0.8em 1em;

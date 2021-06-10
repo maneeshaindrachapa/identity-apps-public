@@ -104,6 +104,7 @@
             .ui.header {
                 font-size: @settingsCardHeaderFontSize;
                 margin-bottom: 5px;
+                color:@pureBlack
             }
         }
         .top-action-panel {
@@ -128,10 +129,10 @@
                 }
                 .inner-list-item {
                     padding: 0;
-
+                    color:@pureBlack;
                     .description {
                         .placeholder-text {
-                            color: lighten(@black, 40);
+                            color: lighten(@white, 40);
                         }
                         .small-text {
                             font-size: 11px;
